@@ -28,7 +28,7 @@ Use explicit input and output folders:
 ```bash
 python offline_rave_batch.py \
   --model /path/to/rave-models/model.ts \
-  --input-dir /path/to/innput/audio \
+  --input-dir /path/to/input/audio \
   --output-dir /path/to/output/audio \
   --model-sr 48000
 ```
@@ -38,7 +38,7 @@ To process only the `S`, `T`, and `N` suffix files:
 ```bash
 python offline_rave_batch.py \
   --model /path/to/rave-models/model.ts \
-  --input-dir /path/to/innput/audio \
+  --input-dir /path/to/input/audio \
   --output-dir /path/to/output/audio \
   --model-sr 48000 \
   --suffixes S,T,N
@@ -49,7 +49,7 @@ Existing output files are skipped. Add `--overwrite` to replace them:
 ```bash
 python offline_rave_batch.py \
   --model /path/to/rave-models/model.ts \
-  --input-dir /path/to/innput/audio \
+  --input-dir /path/to/input/audio \
   --output-dir /path/to/output/audio \
   --model-sr 48000 \
   --overwrite
@@ -60,7 +60,7 @@ Check the matched files and output paths without loading the model or writing au
 ```bash
 python offline_rave_batch.py \
   --model /path/to/rave-models/model.ts \
-  --input-dir /path/to/innput/audio \
+  --input-dir /path/to/input/audio \
   --output-dir /path/to/output/audio \
   --model-sr 48000 \
   --dry-run
